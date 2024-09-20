@@ -1,0 +1,23 @@
+<!-- Base Template -->
+<!DOCTYPE html>
+{% load static %} <!--Required to load static files like css and js files-->
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/student_list.css' %}">
+</head>
+<body>
+    <header><h1>Header</h1>
+        </header>
+
+    <nav> <h1>Navigation</h1>
+        </nav>
+
+    <main><h1>Main</h1>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        </footer>
+</body>
+</html>

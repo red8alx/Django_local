@@ -1,0 +1,11 @@
+<!-- student_list.html -->
+{% extends 'base_template.html' %}
+{% block title %}Student List{% endblock %}
+{% block content %}
+  <h1>List of students:</h1>
+  <ul>
+    {% for student in student_list %}
+      <li>ID = {{ student.id }} FIRST NAME = {{ student.first_name }} LAST NAME = {{ student.last_name }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

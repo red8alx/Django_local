@@ -2,10 +2,10 @@
 {% extends 'base.html' %}
 {% block title %}Book List{% endblock %}
 {% block content %}
-  <h1>Lsit of Books in our Bookstore</h1>
+  <h1>List of Books in our Bookstore</h1>
   <ul>
     {% for book in book_list %}
-      <li>{{ book.title|truncatechars:6 }} by {{ book.author|truncatechars:10 }}</li>
+      <li>{{ book.title|truncatechars:6 }} by {{ book.author.author_name}}</li>
     {% endfor %}
     </ul>
 {% endblock %}
